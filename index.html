@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
-    <title>Empatia & Cooperação - Opção 2: Grade 2x2</title>
+    <title>Projeto Empatia e Cooperação - Acessível</title>
 </head>
 <body>
 
@@ -14,9 +14,10 @@
             <p class="subtitulo">Plataforma de Educação Digital & Construção Coletiva</p>
         </header>
 
-        <!-- Container Flexbox em Grade 2x2 -->
-        <main class="flex-container-op2">
+        <!-- Container de Blocos em Flexbox (Grade 2x2) -->
+        <main class="flex-container-op2" aria-label="Conteúdo Principal do Blog">
             
+            <!-- Card 1 -->
             <article class="card">
                 <h2>Primeiros Passos</h2>
                 <p>Como organizar nosso aprendizado de forma empática:</p>
@@ -27,6 +28,7 @@
                 </ul>
             </article>
 
+            <!-- Card 2 -->
             <article class="card">
                 <h2>Conhecendo o HTML</h2>
                 <h3>Teste 01: parágrafo, imagem e link</h3>
@@ -34,18 +36,31 @@
                     Minha primeira experiência com a Educação Digital e com criação de sites. 
                     Tudo muito novo, porém curioso e instigante de permanecer aprendendo!
                 </p>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSafhY9s3wHv6jWkdYl_UnfSLT5_Cx9yKDM3TJJvC_gtJgJFpQVfVqO10H2&s=10" alt="Imagem ilustrativa do projeto">
-                <a href="https://eacademica.org/eacademica/article/view/600" target="_blank" class="botao">SAIBA MAIS</a>
+                
+                <!-- Descrição da imagem ajustada para ser descritiva e inclusiva -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSafhY9s3wHv6jWkdYl_UnfSLT5_Cx9yKDM3TJJvC_gtJgJFpQVfVqO10H2&s=10" 
+                     alt="Ilustração colorida simbolizando a união de tecnologia, aprendizado e cooperação entre as pessoas.">
+                
+                <!-- Link com aria-label para dar contexto claro a leitores de tela -->
+                <a href="https://eacademica.org/eacademica/article/view/600" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="botao" 
+                   aria-label="Saiba mais sobre o artigo de pesquisa em Educação Digital (abre em uma nova aba)">
+                    SAIBA MAIS
+                </a>
             </article>
 
+            <!-- Card 3 -->
             <article class="card">
                 <h2>Cultura da Cooperação</h2>
                 <p>
                     A cooperação no ambiente digital fortalece os laços comunitários e estimula
-                    a inteligência coletiva, permitindo que cada estudante contribua.
+                    a inteligência coletiva, permitindo que cada estudante contribua com sua visão de mundo.
                 </p>
             </article>
 
+            <!-- Card 4 -->
             <article class="card">
                 <h2>Mural de Ideias</h2>
                 <p>
