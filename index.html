@@ -1,66 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
-    <title>Projeto01: EMPATIA E COOPERAÇÃO</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opção 1 - Destaque Topo + 3 Embaixo</title>
+  <link rel="stylesheet" href="opcao1_estilo.css">
 </head>
 <body>
+  <header>
+    <h1>Projeto Flexbox - Opção 1</h1>
+    <p>1 Bloco em Destaque no Topo + 3 Blocos Menores Abaixo</p>
+  </header>
 
-    <div class="container">
-        
-        <!-- CABEÇALHO PRINCIPAL -->
-        <header>
-            <h1>Primeiro Projeto de ED Digital</h1> 
-            <p class="subtitulo">Aprendendo sempre!</p>
-        </header>
+  <main class="container">
+    <!-- Bloco Principal / Destaque -->
+    <section class="bloco bloco-destaque">
+      <h2>Bloco 1 (Destaque Principal)</h2>
+      <p>Conteúdo de maior relevância do seu site, ocupando 100% da largura superior.</p>
+    </section>
 
-        <!-- ÁREA PRINCIPAL DOS BLOCOS (FLEXBOX) -->
-        <main class="layout-flex">
-            
-            <!-- BLOCO 1: DESTAQUE PRINCIPAL (LARGURA TOTAL NO TOPO) -->
-            <section class="bloco bloco-destaque">
-                <h2>Conhecendo o HTML</h2>
-                <h3>Minha Jornada Digital</h3>
-                <p>
-                    Minha primeira experiência com a Educação Digital e com criação de sites. 
-                    Tudo muito novo, porém curioso e instigante de permanecer aprendendo!
-                </p>
-            </section>
-
-            <!-- LINHA COM OS BLOCOS MENORES EMBAIXO -->
-            <div class="linha-inferior">
-                
-                <!-- BLOCO 2: PRIMEIROS PASSOS -->
-                <article class="bloco">
-                    <h2>Primeiro passo:</h2>
-                    <ul class="lista-passos">
-                        <li>Aprender com empatia como criar elementos em uma página</li>
-                        <li>Como criar uma assinatura no rodapé</li>
-                        <li>Esperar a próxima aula para novas aprendizagens</li>
-                    </ul>
-                </article>
-
-                <!-- BLOCO 3: MÍDIA E LINK -->
-                <article class="bloco bloco-midia">
-                    <h2>Teste 01:</h2>
-                    <h3>Imagem e Link</h3>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSafhY9s3wHv6jWkdYl_UnfSLT5_Cx9yKDM3TJJvC_gtJgJFpQVfVqO10H2&s=10" alt="Imagem ilustrativa do projeto">
-                    
-                    <a href="https://eacademica.org/eacademica/article/view/600" target="_blank" class="botao">SAIBA MAIS</a>
-                </article>
-
-            </div>
-
-        </main>
-
-        <!-- RODAPÉ -->
-        <footer>
-            <p>&copy; 2026 - Desenvolvido pela professora Angelita. Todos os direitos reservados.</p>
-        </footer>
-
+    <!-- Sub-container para os 3 blocos em linha -->
+    <div class="linha-inferior">
+      <article class="bloco">
+        <h3>Bloco 2</h3>
+        <p>Conteúdo secundário 1.</p>
+      </article>
+      <article class="bloco">
+        <h3>Bloco 3</h3>
+        <p>Conteúdo secundário 2.</p>
+      </article>
+      <article class="bloco">
+        <h3>Bloco 4</h3>
+        <p>Conteúdo secundário 3.</p>
+      </article>
     </div>
-
+  </main>
 </body>
 </html>
