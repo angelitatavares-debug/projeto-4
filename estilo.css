@@ -9,8 +9,8 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #63b189; /* Fundo do site */
-    color: #222222; /* Texto bem escuro para maximizar o contraste */
+    background-color: #1a382b; /* Novo Fundo: Verde Floresta Escuro e Elegante */
+    color: #222222; /* Texto escuro dentro dos cartões brancos */
     line-height: 1.6;
     padding: 20px;
 }
@@ -28,19 +28,19 @@ body {
     background-color: #ffffff;
     padding: 25px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     margin-bottom: 25px;
 }
 
 h1 {
-    color: #1a252f; /* Cor escura com excelente contraste */
+    color: #1a252f;
     font-size: 1.8rem;
     text-transform: uppercase;
     margin-bottom: 5px;
 }
 
 .subtitulo {
-    color: #596566; /* Ajustado para atingir a taxa de contraste exigida pela WCAG */
+    color: #596566; /* Cumpre taxa de contraste WCAG no fundo branco */
     font-style: italic;
 }
 
@@ -53,24 +53,24 @@ h1 {
     gap: 20px;
 }
 
-/* Cada card ocupa metade da largura em telas médias/grandes */
+/* Cada card em fundo branco destacando-se sobre o fundo escuro */
 .card {
     background-color: #ffffff;
     flex: 1 1 calc(50% - 10px);
     min-width: 280px;
     padding: 25px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 /* ==========================================================================
-   TITULOS E TEXTOS (CORES COM ALTO CONTRASTE WCAG AA/AAA)
+   TÍTULOS E TEXTOS (CORES COM ALTO CONTRASTE WCAG AA/AAA)
    ========================================================================== */
 h2 {
-    color: #1b6291; /* Azul escurecido para atingir a proporção de 6.8:1 */
+    color: #1b6291; /* Contraste de 6.8:1 no fundo branco */
     font-size: 1.35rem;
     margin-bottom: 10px;
 }
@@ -110,7 +110,7 @@ img {
 a.botao {
     display: inline-block;
     align-self: flex-start;
-    background-color: #1e7e45; /* Verde escurecido para auto-contraste do texto branco */
+    background-color: #1e7e45;
     color: #ffffff;
     padding: 10px 20px;
     text-decoration: none;
@@ -127,15 +127,14 @@ a.botao:hover {
 /* ==========================================================================
    FOCO NAVEGÁVEL POR TECLADO (WCAG 2.4.7 - FOCUS VISIBLE)
    ========================================================================== */
-/* Quando o usuário pressiona TAB para navegar, um contorno nítido é exibido */
 a:focus-visible, 
 button:focus-visible {
-    outline: 3px solid #111111;
+    outline: 3px solid #27ae60;
     outline-offset: 4px;
 }
 
 /* ==========================================================================
-   REDUÇÃO DE MOVIMENTO (ACESSIBILIDADE PARA LABIRINTITE / DISTÚRBIOS VESTIBULARES)
+   REDUÇÃO DE MOVIMENTO (LABIRINTITE / DISTÚRBIOS VESTIBULARES)
    ========================================================================== */
 @media (prefers-reduced-motion: reduce) {
     *, ::before, ::after {
@@ -157,5 +156,5 @@ footer {
     border-radius: 12px;
     font-size: 0.9rem;
     color: #333333;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
