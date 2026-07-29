@@ -1,39 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Opção 1 - Destaque Topo + 3 Embaixo</title>
-  <link rel="stylesheet" href="opcao1_estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Empatia & Cooperação - Opção 1: Destaque Superior</title>
 </head>
 <body>
-  <header>
-    <h1>Projeto Flexbox - Opção 1</h1>
-    <p>1 Bloco em Destaque no Topo + 3 Blocos Menores Abaixo</p>
-  </header>
 
-  <main class="container">
-    <!-- Bloco Principal / Destaque -->
-    <section class="bloco bloco-destaque">
-      <h2>Bloco 1 (Destaque Principal)</h2>
-      <p>Conteúdo de maior relevância do seu site, ocupando 100% da largura superior.</p>
-    </section>
+    <div class="main-wrapper">
+        <header class="header-principal">
+            <h1>Projeto Empatia e Cooperação</h1>  
+            <p class="subtitulo">Plataforma de Educação Digital & Construção Coletiva</p>
+        </header>
 
-    <!-- Sub-container para os 3 blocos em linha -->
-    <div class="linha-inferior">
-      <article class="bloco">
-        <h3>Bloco 2</h3>
-        <p>Conteúdo secundário 1.</p>
-      </article>
-      <article class="bloco">
-        <h3>Bloco 3</h3>
-        <p>Conteúdo secundário 2.</p>
-      </article>
-      <article class="bloco">
-        <h3>Bloco 4</h3>
-        <p>Conteúdo secundário 3.</p>
-      </article>
+        <!-- Container de Blocos em Flexbox -->
+        <main class="flex-container-op1">
+            
+            <!-- Card 1: Destaque Principal -->
+            <article class="card card-destaque">
+                <span class="badge">Destaque</span>
+                <h2>Conhecendo o HTML & Nossa Missão</h2>
+                <div class="card-body">
+                    <p>
+                        Minha primeira experiência com a Educação Digital e com a criação de sites. 
+                        Tudo muito novo, porém curioso e instigante de permanecer aprendendo! A empatia nos move
+                        a compartilhar conhecimento e transformar o aprendizado em algo colaborativo.
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSafhY9s3wHv6jWkdYl_UnfSLT5_Cx9yKDM3TJJvC_gtJgJFpQVfVqO10H2&s=10" alt="Imagem ilustrativa do projeto">
+                    <a href="https://eacademica.org/eacademica/article/view/600" target="_blank" class="botao">SAIBA MAIS</a>
+                </div>
+            </article>
+
+            <!-- Card 2: Primeiros Passos -->
+            <article class="card">
+                <h2>Primeiros Passos</h2>
+                <ul>
+                    <li>Aprender com empatia como criar elementos</li>
+                    <li>Como criar uma assinatura no rodapé</li>
+                    <li>Esperar a próxima aula para novas aprendizagens</li>
+                </ul>
+            </article>
+
+            <!-- Card 3: Valores de Cooperação -->
+            <article class="card">
+                <h2>Cooperação em Rede</h2>
+                <p>
+                    A cooperação na tecnologia permite que alunos e professores aprendam juntos,
+                    construindo soluções acessíveis e acolhedoras para todos.
+                </p>
+            </article>
+
+            <!-- Card 4: Próximos Projetos -->
+            <article class="card">
+                <h2>Próximas Etapas</h2>
+                <p>
+                    Em breve teremos novos módulos de CSS avançado, acessibilidade web e dinamismo
+                    com JavaScript para ampliar o alcance do nosso blog.
+                </p>
+            </article>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2026 - Desenvolvido pela professora Angelita. Todos os direitos reservados.</p>
+        </footer>
     </div>
-  </main>
+
 </body>
 </html>
